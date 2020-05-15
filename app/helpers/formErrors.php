@@ -1,0 +1,8 @@
+<!-- Displaying Error message is there is any error -->
+<?php if(count($errors) > 0): ?>
+    <div class="msg success error">
+        <?php foreach ($errors as $error): ?>
+            <li><?php echo $error; ?></li>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>

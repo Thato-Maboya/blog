@@ -1,0 +1,101 @@
+/* ADMIN NAVBAR */
+
+/* Changing the bg & height of header */
+header{
+    background: #01474a;
+}
+
+.admin-wrapper{
+    display: flex;
+    height: calc(100% - 66px);          /* Calculating the hieght of admin content so that it can not be scrollable. We just give it 100% hieght when we add with nav-bar */
+}
+
+.admin-wrapper .left-sidebar{
+    flex: 2;                            /* Setting  the left sidebar to occupying (2/10)=20% of the page */
+    height: 100%;
+    background: #234a57;
+}
+
+.admin-wrapper .left-sidebar ul{
+    list-style: none;                   /* Removing the bullet on the left-sidebar */
+    margin: 0px;                        /* Removing the space between sidebar menu */
+    padding: 0px;                       /* Removing the space between sidebar menu */
+    color: aliceblue;
+}
+
+.admin-wrapper .left-sidebar ul li a{
+    padding: 18px;                      /* Pushing the link name 18px forward from 0px above */
+    display: block;
+    border-bottom: 1px solid #004044;   /* Giving them border in the botton to show where they end */
+}
+
+.admin-wrapper .left-sidebar ul li a:hover{
+    background: #004044;                /* Adding a bg-color when we hover */
+}
+
+.admin-wrapper .admin-content{
+    flex: 8;                            /* Setting  the admin content to occupying (8/10)=80% of the page */
+    height: 100%;
+    padding: 40px 100px 100px;          /* Giving the main-content the padding/space of 40px(top), 100px(right) & 100px(left) */
+    overflow-y: scroll;                 /* Making the main-content scroll if we have more data */
+}
+
+.admin-content .page-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th, td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.edit{
+    color: green;
+}
+
+.delete{
+    color: red;
+}
+
+.publish{
+    color: blue;
+}
+
+.edit:hover{
+    text-decoration: underline;
+}
+
+.delete:hover{
+    text-decoration: underline;
+}
+
+.publish:hover{
+    text-decoration: underline;
+}
+
+form div{
+    margin-bottom: 15px;
+}
+/* ADMIN NAVBAR */
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 934px){
+    .btn-big {
+        display: block;
+        width: 100%;
+        padding: 0.7rem 1.3rem;
+        margin: 5px;
+        line-height: 1.3rem;
+    }
+}
